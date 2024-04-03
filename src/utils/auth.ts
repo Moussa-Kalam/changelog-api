@@ -1,6 +1,12 @@
 import jwt from 'jsonwebtoken';
 import { User } from '@prisma/client';
 import { Request, Response, NextFunction } from 'express';
+import * as bcrypt from 'bcrypt';
+
+export const comparePasswords = (password: string, hash: string) =>
+  bcrypt.compare(password, hash);
+
+export const hashPassword = (password: string) => bcrypt.hash(password, 5);
 
 type AuthenticatedRequest = Request & { user?: User };
 
