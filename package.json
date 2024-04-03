@@ -1,0 +1,27 @@
+{
+  "name": "changelog-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moussa-Kalam/changelog-api.git"
+  },
+  "keywords": [
+    "node.js",
+    "express",
+    "prisma"
+  ],
+  "author": "Moussa Kalam AMZAT",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moussa-Kalam/changelog-api/issues"
+  },
+  "homepage": "https://github.com/Moussa-Kalam/changelog-api#readme",
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
