@@ -8,7 +8,7 @@ export const comparePasswords = (password: string, hash: string) =>
 
 export const hashPassword = (password: string) => bcrypt.hash(password, 5);
 
-type AuthenticatedRequest = Request & { user?: User };
+export type AuthenticatedRequest = Request & { user?: User };
 
 export const createJWT = (user: User) => {
   const token = jwt.sign(
